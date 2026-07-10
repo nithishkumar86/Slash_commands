@@ -48,10 +48,10 @@ const ExplorePage = () => {
       <SectionNav current="explore" />
 
       <header className="mb-8">
-        <h1 className="mb-3 text-3xl font-bold text-white">
+        <h1 className="mb-3 text-4xl font-bold text-white">
           Explore all slash commands
         </h1>
-        <p className="max-w-2xl text-base leading-relaxed text-slate-300">
+        <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
           Every slash command in Claude Code, with a plain-English definition.
         </p>
       </header>
@@ -74,7 +74,7 @@ const ExplorePage = () => {
             value={searchTerm}
             onChange={handleSearch}
             placeholder="Search commands by name or description…"
-            className="mb-6 w-full rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-sky-400/50 focus:outline-none"
+            className="mb-6 w-full rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-base text-slate-100 placeholder:text-slate-500 focus:border-sky-400/50 focus:outline-none"
           />
 
           {filteredCommands.length === 0 ? (

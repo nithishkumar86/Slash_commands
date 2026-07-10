@@ -14,7 +14,7 @@ const SECTIONS = [
 /** Back-to-home link plus cross-links to the other three sections. */
 const SectionNav = ({ current }: SectionNavProps) => {
   return (
-    <nav className="mb-8 flex flex-wrap items-center gap-3 text-sm">
+    <nav className="mb-8 flex flex-wrap items-center gap-3 text-base">
       <Link
         href="/"
         className="rounded-md border border-white/15 px-3 py-1.5 text-slate-200 hover:bg-white/10"

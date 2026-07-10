@@ -48,16 +48,16 @@ const PlansPage = () => {
       ) : (
         <article className="space-y-10">
           <header>
-            <h1 className="mb-3 text-3xl font-bold text-white">
+            <h1 className="mb-3 text-4xl font-bold text-white">
               {plans.title}
             </h1>
-            <p className="max-w-2xl text-base leading-relaxed text-slate-300">
+            <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
               {plans.whatItIs}
             </p>
           </header>
 
           <section>
-            <h2 className="mb-3 text-xl font-semibold text-white">
+            <h2 className="mb-3 text-2xl font-semibold text-white">
               How to enter it
             </h2>
             <ul className="space-y-2 text-slate-300">
@@ -73,13 +73,13 @@ const PlansPage = () => {
           </section>
 
           <section>
-            <h2 className="mb-3 text-xl font-semibold text-white">
+            <h2 className="mb-3 text-2xl font-semibold text-white">
               How it works
             </h2>
             <ol className="space-y-2 text-slate-300">
               {plans.workflow.map((step, index) => (
                 <li key={step} className="flex gap-3 leading-relaxed">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-sky-400/40 text-sm text-sky-300">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-sky-400/40 text-base text-sky-300">
                     {index + 1}
                   </span>
                   <span>{step}</span>
@@ -89,12 +89,12 @@ const PlansPage = () => {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-semibold text-white">
+            <h2 className="mb-4 text-2xl font-semibold text-white">
               When to use it vs. when to skip it
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-5">
-                <h3 className="mb-3 text-lg font-semibold text-emerald-200">
+                <h3 className="mb-3 text-xl font-semibold text-emerald-200">
                   When to use Plan Mode
                 </h3>
                 <ul className="space-y-2 text-emerald-50/90">
@@ -113,7 +113,7 @@ const PlansPage = () => {
               </div>
 
               <div className="rounded-lg border border-amber-500/30 bg-amber-500/10 p-5">
-                <h3 className="mb-3 text-lg font-semibold text-amber-200">
+                <h3 className="mb-3 text-xl font-semibold text-amber-200">
                   When to skip it
                 </h3>
                 <ul className="space-y-2 text-amber-50/90">

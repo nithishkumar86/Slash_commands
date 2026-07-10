@@ -36,10 +36,10 @@ const ManagePage = () => {
       <SectionNav current="manage" />
 
       <header className="mb-8">
-        <h1 className="mb-3 text-3xl font-bold text-white">
+        <h1 className="mb-3 text-4xl font-bold text-white">
           Managing sessions
         </h1>
-        <p className="max-w-2xl text-base leading-relaxed text-slate-300">
+        <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
           Resume, rename, rewind, branch, and export — the actions that let you
           pick up, reshape, and share a Claude Code session.
         </p>

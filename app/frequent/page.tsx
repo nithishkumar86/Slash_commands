@@ -36,10 +36,10 @@ const FrequentPage = () => {
       <SectionNav current="frequent" />
 
       <header className="mb-8">
-        <h1 className="mb-3 text-3xl font-bold text-white">
+        <h1 className="mb-3 text-4xl font-bold text-white">
           Frequently used commands
         </h1>
-        <p className="max-w-2xl text-base leading-relaxed text-slate-300">
+        <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
           The handful of slash commands you reach for daily, and why each one
           matters.
         </p>

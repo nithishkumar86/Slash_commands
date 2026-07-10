@@ -9,11 +9,11 @@ const TopicBox = ({ command }: TopicBoxProps) => {
   return (
     <div className="flex flex-col gap-2 rounded-lg border border-white/10 bg-white/5 p-4 sm:flex-row sm:items-start sm:gap-4">
       <div className="shrink-0 sm:w-44">
-        <code className="font-mono text-sm font-semibold text-sky-300">
+        <code className="font-mono text-base font-semibold text-sky-300">
           {command.name}
         </code>
       </div>
-      <p className="flex-1 text-sm leading-relaxed text-slate-300">
+      <p className="flex-1 text-base leading-relaxed text-slate-300">
         {command.description}
       </p>
     </div>
