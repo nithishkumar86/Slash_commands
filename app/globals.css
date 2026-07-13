@@ -16,3 +16,17 @@ body {
     Roboto,
     sans-serif;
 }
+
+@theme {
+  --animate-command-pulse: command-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes command-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}

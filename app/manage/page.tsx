@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import SectionNav from "@/components/SectionNav";
-import TopicBox from "@/components/TopicBox";
+import CommandExplorer from "@/components/CommandExplorer";
 import type { Command, CommandsResponse } from "@/lib/types";
 
 /** Client page for /manage: fetches the session-management actions and renders them. */
@@ -57,11 +57,7 @@ const ManagePage = () => {
           No session actions are available right now.
         </p>
       ) : (
-        <div className="space-y-3">
-          {commands.map((command) => (
-            <TopicBox key={command.name} command={command} />
-          ))}
-        </div>
+        <CommandExplorer commands={commands} />
       )}
     </main>
   );
