@@ -45,10 +45,10 @@ const CommandExplorer = ({ commands }: CommandExplorerProps) => {
               type="button"
               aria-pressed={isSelected}
               onClick={() => handleSelect(command)}
-              className={`rounded-lg border px-4 py-3 text-left font-mono text-base font-semibold transition ${
+              className={`rounded-lg border px-4 py-3 text-left font-mono text-base font-semibold backdrop-blur-sm transition ${
                 isSelected
-                  ? "border-sky-400/50 bg-sky-400/10 text-sky-300"
-                  : "border-white/10 bg-white/5 text-sky-300/90 hover:border-sky-400/30 hover:bg-white/10"
+                  ? "border-sky-400/60 bg-sky-400/15 text-sky-200 shadow-lg shadow-sky-500/10"
+                  : "border-white/10 bg-white/5 text-sky-300/90 hover:border-sky-400/40 hover:bg-white/10"
               }`}
             >
               {command.name}
@@ -60,7 +60,7 @@ const CommandExplorer = ({ commands }: CommandExplorerProps) => {
       <div className="sm:sticky sm:top-16 sm:self-start">
         {selectedCommand ? (
           <div
-            className={`rounded-lg border border-white/10 bg-white/5 p-6 ${
+            className={`rounded-lg border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/30 backdrop-blur-sm ${
               isAnimating
                 ? "animate-command-pulse motion-reduce:animate-none"
                 : ""

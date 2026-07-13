@@ -48,7 +48,7 @@ const PlansPage = () => {
       ) : (
         <article className="space-y-10">
           <header>
-            <h1 className="mb-3 text-4xl font-bold text-white">
+            <h1 className="text-gradient mb-3 text-4xl font-bold">
               {plans.title}
             </h1>
             <p className="max-w-2xl text-lg leading-relaxed text-slate-300">

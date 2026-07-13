@@ -46,7 +46,7 @@ const Home = () => {
         <p className="mb-2 text-sm font-medium uppercase tracking-wide text-sky-400">
           Section 4
         </p>
-        <h1 className="mb-4 text-4xl font-bold text-white">Commands</h1>
+        <h1 className="text-gradient mb-4 text-5xl font-bold">Commands</h1>
         <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
           A quick tour of Claude Code&apos;s slash commands, Plan Mode, and
           session management — the tools you use to steer a coding session.
@@ -59,7 +59,7 @@ const Home = () => {
         ))}
       </section>
 
-      <section className="rounded-xl border border-white/10 bg-white/5 p-6">
+      <section className="rounded-xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20 backdrop-blur-sm">
         <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-400">
           Today&apos;s topics
         </h2>
